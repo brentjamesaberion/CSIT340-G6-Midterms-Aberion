@@ -1,7 +1,7 @@
 import { useState } from "react";
-
+import Summary from "./Summary";
 function PlanPicker() {
-      const [seats, setSeats] = useState(1);
+    const [seats, setSeats] = useState(1);
   const [months, setMonths] = useState(1);
 
   function handleAddSeat() {
@@ -20,13 +20,8 @@ function PlanPicker() {
     return(
     <>
         <div className="flex items-end justify-between bg-[#000000] px-20 py-12 text-[#EEEEEE]">
-        <header>
-          <h2 className="text-6xl font-bold">Build your plan</h2>
-          <p className="mt-4 text-3xl text-[#CB2957]">
-            Seats: {seats} | Months: {months}
-          </p>
-          <p className="mt-2 text-xl">Quote for Brent James N. ABerion</p>
-        </header>
+            
+        <Summary seats={seats} months={months} />
 
         <div className="flex gap-4">
           <button

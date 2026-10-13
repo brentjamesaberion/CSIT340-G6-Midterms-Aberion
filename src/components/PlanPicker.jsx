@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Summary from "./Summary";
 import PlanCard from "./PlanCard";
+import Controls from "./Controls";
 
 function PlanPicker() {
     const [seats, setSeats] = useState(1);
@@ -26,24 +27,9 @@ function PlanPicker() {
         <Summary seats={seats} months={months} />
 
         <div className="flex gap-4">
-          <button
-            className="cursor-pointer rounded-lg bg-[#CB2957] px-8 py-3 text-xl font-bold text-[#EEEEEE]"
-            onClick={handleAddSeat}
-          >
-            Add seat
-          </button>
-          <button
-            className="cursor-pointer rounded-lg bg-[#EEEEEE] px-8 py-3 text-xl font-bold text-[#000000]"
-            onClick={handleAddMonth}
-          >
-            Add month
-          </button>
-          <button
-            className="cursor-pointer rounded-lg border-2 border-[#EEEEEE] px-8 py-3 text-xl font-bold"
-            onClick={handleReset}
-          >
-            Reset
-          </button>
+          <Controls handleClick={handleAddSeat} text="Add seat" />
+          <Controls handleClick={handleAddMonth} text="Add month" />
+          <Controls handleClick={handleReset} text="Reset" />
         </div>
       </div>
 

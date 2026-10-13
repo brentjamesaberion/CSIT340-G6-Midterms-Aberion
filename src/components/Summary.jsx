@@ -5,7 +5,7 @@ function Summary(props) {
           <p className="mt-4 text-3xl text-[#CB2957]">
             Seats: {props.seats} | Months: {props.months}
           </p>
-          <p className="mt-2 text-xl">Quote for Brent James N. ABerion</p>
+          <p className="mt-2 text-xl">Quote for Brent James N. Aberion</p>
         </header>
     )
 }

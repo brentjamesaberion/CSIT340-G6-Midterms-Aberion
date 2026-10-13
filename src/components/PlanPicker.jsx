@@ -49,11 +49,11 @@ function PlanPicker() {
 
       <main className="grid grid-cols-3 gap-8 px-20 pt-10">
 
-        <PlanCard seats={seats} months={months} name="Starter" price={199} storage="10 GB" support="Email support" />
+        <PlanCard seats={seats} months={months} name="Starter" price={199} storage="10 GB storage" support="Email support" />
 
-        <PlanCard seats={seats} months={months} name="Team" price={499} storage="100 GB" support="Chat support" />
+        <PlanCard seats={seats} months={months} name="Team" price={499} storage="100 GB storage" support="Chat support" />
 
-        <PlanCard seats={seats} months={months} name="Business" price={999} storage="1000 GB" support="Phone support" />
+        <PlanCard seats={seats} months={months} name="Business" price={999} storage="1000 GB storage" support="Phone support" />
       </main>
     </>
     ) 

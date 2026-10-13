@@ -16,7 +16,7 @@ function Waitlist() {
         <h3 className="text-2xl font-bold">
           "Cloudline Enterprise is coming soon."
         </h3>
-        <p className="mt-1 text-xl">{teams} teams have joined the waitlist.</p>
+        <p className="mt-1 text-xl">{teams} teams joined the waitlist.</p>
       </div>
 
       <div className="flex gap-4">

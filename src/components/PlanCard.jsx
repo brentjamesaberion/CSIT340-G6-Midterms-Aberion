@@ -7,8 +7,8 @@ function PlanCard(props) {
             <h3 className="text-3xl font-bold">{props.name}</h3>
             <p className="mt-2 text-xl">PHP {props.price} per seat each month</p>
             <ul className="mt-6 text-xl">
-                <Feature text={props.support} />
                 <Feature text={props.storage} />
+                <Feature text={props.support} />
             </ul>
           </div>
           <p className="bg-[#000000] px-8 py-5 text-3xl font-bold text-[#EEEEEE]">
